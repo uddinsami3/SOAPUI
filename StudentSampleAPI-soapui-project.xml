@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="f5e6b820-d036-45f7-93fc-e9aa6ce199a3" activeEnvironment="Default" name="StudentSampleAPI" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="dcfb0b40-930c-48ec-8b7f-aec6ae66f926" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8080" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:9000</con:endpoint></con:endpoints><con:resource name="getAllStudentDetails" path="/student/list" id="329bc83e-6558-406f-b93d-8d45671fed47"><con:settings/><con:parameters/><con:method name="getAllStudentDetails" id="164e8dcd-9f26-4826-994c-bbab2cc6ce48" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="0a196439-e688-4f68-af3b-2ecee643b7a7" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9000</con:endpoint><con:request/><con:originalUri>http://localhost/student/list</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="createStudent" path="/student" id="1d775326-6176-4580-87df-88269efb743e"><con:settings/><con:parameters/><con:method name="createStudent" id="de685f38-3e3a-46db-9188-3e062b67e7a3" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:stud="http://localhost/student">stud:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="e84d7300-8840-4442-941c-c25beeeb41f6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9000</con:endpoint><con:request>{"firstName":"syed","lastName":"Naser","email":"example@gmail.com","programme":"Financial Analysis","courses":["Accounting","Statistics"]}</con:request><con:originalUri>http://localhost/student</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="updateStudent" path="/student/{id}" id="95f8d639-8b22-4a8f-b144-c9e4089dec3f"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default></con:parameter></con:parameters><con:method name="updateStudent" id="e4f1f075-09fb-402b-bb30-42486eeb707c" method="PUT"><con:settings/><con:parameters/><con:request name="Request 1" id="be90db79-702d-4ea4-a5b1-49d64458e078" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9000</con:endpoint><con:request>{"firstName":"hjddkd","lastName":"Ia4tRKqcU","email":"5cu9MHt9Z@gmail.com","programme":"96zJ14lcu","courses":["Accounting","Statistics"]}]</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="102" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method></con:resource><con:resource name="deleteStudent" path="/student/{id}" id="f18ea67e-9fdb-4988-af64-68c97c618103"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default></con:parameter></con:parameters><con:method name="deleteStudent" id="2076e403-e6d5-4ee2-bb30-7f4e5d3eb36f" method="DELETE"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="65fae64d-5c2e-45a7-b13e-a1d81f5d5d74" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9000</con:endpoint><con:request/><con:originalUri>http://localhost/student/112</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="112" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method></con:resource><con:resource name="getStudentDetails" path="/student/{id}" id="44e7fb0d-e25d-410a-a1d5-75632824ec76"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default></con:parameter></con:parameters><con:method name="getStudentDetails" id="99ec0efc-3777-4e01-8245-18e2b8c4f92b" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://localhost/student/1">ns:Response</con:element></con:representation><con:request name="Request 1" id="5ad3e92b-b5e5-4366-a82f-9b66c626abeb" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9000</con:endpoint><con:request/><con:originalUri>http://localhost/student/1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="102" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method></con:resource><con:resource name="getStudentByProgramme" path="/student/list" id="ce2e9a6c-8602-4876-aa90-6424290b1714"><con:settings/><con:parameters><con:parameter><con:name>programme</con:name><con:value>Criminology</con:value><con:style>QUERY</con:style><con:default>Criminology</con:default></con:parameter></con:parameters><con:method name="getStudentByProgramme" id="4389405a-98c6-4019-b4e1-d2baa3e8378d" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="35631024-57a2-49d9-ad74-251b4aa0872d" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:9000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="a3f59b9a-6e45-441f-a663-30199826d79d" name="TestSuite1"><con:description>TestSuite generated for REST Service [http://localhost:8080]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="4e0cc150-5f1a-4c8e-9c48-8fdcdd66f0d4" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getAllStudentDetails TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [getAllStudentDetails] located at [/student/list]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="670f9dfe-bdce-4d8a-9c09-adcd184a6244"><con:settings/><con:config service="http://localhost:8080" resourcePath="/student/list" methodName="getAllStudentDetails" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="0a196439-e688-4f68-af3b-2ecee643b7a7" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9000</con:endpoint><con:request/><con:originalUri>http://localhost/student/list</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="b2e1e4e3-6efc-4ffb-a69d-53b69a388fa0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="createStudent TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [createStudent] located at [/student]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="946c128a-2142-45ea-9a55-8488d75116db"><con:settings/><con:config service="http://localhost:8080" resourcePath="/student" methodName="createStudent" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="e84d7300-8840-4442-941c-c25beeeb41f6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9000</con:endpoint><con:request>{"firstName":"syed","lastName":"Naser","email":"example@gmail.com","programme":"Financial Analysis","courses":["Accounting","Statistics"]}</con:request><con:originalUri>http://localhost/student</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="0808de3a-4a96-4280-ae50-dc0ae07d5714" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="updateStudent TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [updateStudent] located at [/student/{id}]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="a89cbc98-eedf-4fce-bcbe-50750c860150"><con:settings/><con:config service="http://localhost:8080" resourcePath="/student/{id}" methodName="updateStudent" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="be90db79-702d-4ea4-a5b1-49d64458e078" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9000</con:endpoint><con:request>{"firstName":"hjddkd","lastName":"Ia4tRKqcU","email":"5cu9MHt9Z@gmail.com","programme":"96zJ14lcu","courses":["Accounting","Statistics"]}]</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="102" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="943cc6bb-ad1a-4624-a81f-f7c730b320dc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="deleteStudent TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [deleteStudent] located at [/student/{id}]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="58b24497-3c88-480e-99ba-bd82f3bde580"><con:settings/><con:config service="http://localhost:8080" resourcePath="/student/{id}" methodName="deleteStudent" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="65fae64d-5c2e-45a7-b13e-a1d81f5d5d74" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9000</con:endpoint><con:request/><con:originalUri>http://localhost/student/112</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="edc7554a-3e4d-4705-a2f1-8ddf19732630" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getStudentDetails TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [getStudentDetails] located at [/student/{id}]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="213f8ce6-bda8-45c4-82b3-b54c1c6d44d7"><con:settings/><con:config service="http://localhost:8080" resourcePath="/student/{id}" methodName="getStudentDetails" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="5ad3e92b-b5e5-4366-a82f-9b66c626abeb" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9000</con:endpoint><con:request/><con:originalUri>http://localhost/student/1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="102" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5f7d65d2-f303-4732-be02-1657288f9a1c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getStudentByProgramme TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [getStudentByProgramme] located at [/student/list]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="bd7efe9d-3990-4ef1-a408-43345304a778"><con:settings/><con:config service="http://localhost:8080" resourcePath="/student/list" methodName="getStudentByProgramme" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="35631024-57a2-49d9-ad74-251b4aa0872d" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:9000</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>Author</con:name><con:value>Naser</con:value></con:property><con:property><con:name>Category</con:name><con:value>report</con:value></con:property></con:properties></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:afterRunScript><![CDATA[log.info "------- Starting Executing Teardown Script -------------------"
+import com.aventstack.extentreports.AnalysisStrategy;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+// Get the project path
+def projectPath = new com.eviware.soapui.support.GroovyUtils(context).projectPath
+def relativeFilePath = projectPath.replace("\\","//");
+def actualProjectPath = relativeFilePath+"//Reports//soapuiExecutionReport.html"
+
+ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(actualProjectPath);
+ExtentReports extent = new ExtentReports ();
+
+extent.attachReporter(htmlReporter);
+extent.setSystemInfo("Host Name", "Automation Reporter");
+extent.setSystemInfo("Environment", "Automation");
+extent.setSystemInfo("Executer", "Akshay Sharma");
+
+htmlReporter.config().setDocumentTitle("SOAPUI Automation Report");
+htmlReporter.config().setReportName("Automation Testing Reporter");
+htmlReporter.config().setChartVisibilityOnOpen(true);
+
+// Actual logic for Reports update
+ArrayList<String> failedMessages = new ArrayList<String>();
+runner.getResults().each { testSuiteRunner ->
+	ExtentTest parentTest = extent.createTest(testSuiteRunner.getTestSuite().getName());
+	//log.info('Test Suite ' + testSuiteRunner.getTestSuite().getName() + ' TestRunner.status = ' + testSuiteRunner.getStatus());
+	
+	testSuiteRunner.getResults().each { testCaseRunner ->
+		ExtentTest test = parentTest.createNode(testCaseRunner.getTestCase().getName(), testCaseRunner.getTestCase().getDescription());
+		//log.info('Test Case ' + testCaseRunner.getTestCase().getName() + ' TestRunner.status = ' + testCaseRunner.getStatus());
+		def authorName = testCaseRunner.getTestCase().getPropertyValue("Author")
+		def categoryName = testCaseRunner.getTestCase().getPropertyValue("Category")
+		if(authorName != null && categoryName != null){
+			test.assignAuthor(authorName)
+			test.assignCategory(categoryName)
+		}
+		testCaseRunner.getResults().each { testStepResult ->
+			//log.info('Test Step ' + testStepResult.getTestStep().getName() + ' TestRunner.status = ' + testStepResult.getStatus());
+
+			def testStepStatus = testStepResult.getStatus();
+			
+			if(testStepStatus.toString().equalsIgnoreCase('OK') || testStepStatus.toString().equalsIgnoreCase('PASS')) {
+				//log.info "Start Loging " + testStepResult.getTestStep().getName() + " As Passed"
+				test.pass(testStepResult.getTestStep().getName());
+			} else {
+				testStepResult.getMessages().each { message ->
+					failedMessages.add(message);					
+				}
+				//log.info "Start Loging " + testStepResult.getTestStep().getName() + " As Failed"
+				
+				def testSuiteName = testSuiteRunner.getTestSuite().getName()
+				def testCaseName = testCaseRunner.getTestCase().getName()
+				def testStepName = testStepResult.getTestStep().getName()				
+				def Request = "NULL"
+				def Response = "NULL"
+				def GroovyScript = "NULL"
+				def Req = "NULL"
+				def Res = "NULL"
+				def actualData
+				
+				def tempTCName = testCaseName.replace('/','');
+				def testTStpName = testStepName.replace('/','');
+				
+				def ResFile = relativeFilePath+"//ReqRespPairs//"+tempTCName+"_"+testTStpName+"_Failed.txt"
+				
+				def getTestStepDetails = project.testSuites[testSuiteName].testCases[testCaseName].getTestStepByName(testStepName)
+				
+				if(getTestStepDetails.getProperty("Request") || getTestStepDetails.getProperty("Response") || getTestStepDetails.getProperty("Result")) {
+					Request = getTestStepDetails.getProperty("RawRequest")
+					Response = getTestStepDetails.getProperty("Response")
+					GroovyScript = getTestStepDetails.getProperty("Result")
+					
+					if(GroovyScript.toString().equalsIgnoreCase("NULL")) {
+						Req = Request.getValue();
+						Res = Response.getValue();
+						
+						actualData = "------------- REQUEST DATA ---------------\n\n" + Req + "\n\n------------- RESPONSE DATA ---------------\n\n" + Res + "\n\n------------- REQUEST DATA ---------------\n\n" + failedMessages.toString()
+						
+						def data = new File(ResFile)
+						data.write(actualData,"UTF-8")
+						
+						def appendReqAndRespPair = '<a href="' + ResFile + '" target="_blank">Failed Step Details </a>'
+						
+						test.fail(testStepName +" <b>Failed. Check Details | <b> " + "<span style='font-weight:bold;'></span>" + appendReqAndRespPair);
+						
+						log.info "Test Log Completed for " + testStepName
+						failedMessages.clear();
+					} else if (Request.toString().equalsIgnoreCase("NULL")) {
+						Req = "No Request Found. Check below error details"
+						Res = "No Response Found. Check below error details"
+						
+						actualData = "------------- REQUEST DATA ---------------\n\n" + Req + "\n\n------------- RESPONSE DATA ---------------\n\n" + Res + "\n\n------------- REQUEST DATA ---------------\n\n" + failedMessages.toString()
+						
+						def data = new File(ResFile)
+						data.write(actualData,"UTF-8")
+						
+						def appendReqAndRespPair = '<a href="' + ResFile + '" target="_blank">Failed Step Details </a>'
+						
+						test.fail(testStepName +" <b>Failed. Check Details | <b> " + "<span style='font-weight:bold;'></span>" + appendReqAndRespPair);
+						
+						log.info "Test Log Completed for " + testStepName
+						failedMessages.clear();
+					}
+				} else {
+					Req = "No Request Found. Check below error details"
+					Res = "No Response Found. Check below error details"
+					
+					actualData = "------------- REQUEST DATA ---------------\n\n" + Req + "\n\n------------- RESPONSE DATA ---------------\n\n" + Res + "\n\n------------- REQUEST DATA ---------------\n\n" + failedMessages.toString()
+						
+					def data = new File(ResFile)
+					data.write(actualData,"UTF-8")
+					
+					def appendReqAndRespPair = '<a href="' + ResFile + '" target="_blank">Failed Step Details </a>'
+					
+					test.fail(testStepName +" <b>Failed. Check Details | <b> " + "<span style='font-weight:bold;'></span>" + appendReqAndRespPair);
+					
+					log.info "Test Log Completed for " + testStepName
+					failedMessages.clear();
+				}
+			}
+		}
+	}
+}
+extent.flush();
+log.info "------- Completed Executing Teardown Script ------------------"]]></con:afterRunScript><con:sensitiveInformation/></con:soapui-project>
