@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="7803f609-3352-4237-ae49-9db5060c2021" activeEnvironment="Default" name="Payments" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="&lt;all>"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="C:\Users\syednaseru\Desktop\SoapUIResults\Assessment"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="6b636346-e085-4750-82e1-908d47f31c3c" wadlVersion="http://wadl.dev.java.net/2009/02" name="sample-4e6d REST API" type="rest" basePath="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:description>**restdb.io Swagger documentation**</con:description><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://sample-4e6d.restdb.io</con:endpoint></con:endpoints><con:resource name="/users" path="/rest/users" id="73f63ac6-7c92-4384-a44a-b9a9cf0e22e8"><con:settings/><con:parameters/><con:method name="GET" id="44cfa9ca-0748-4c7c-bf5c-e540ac680c41" method="GET"><con:description>
+Get many users documents. All or by query</con:description><con:settings/><con:parameters><con:parameter><con:name>q</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description>Optional database query object. q={"field":"val"}</con:description></con:parameter><con:parameter><con:name>h</con:name><con:style>QUERY</con:style><con:description>Optional database query hint. h={"$max":1}</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>500</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="d636b272-cc09-4f96-9903-aa8c05d9ba7c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="9677194df0cd556c1bb2f9aeee86c7e218482" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://sample-4e6d.restdb.io</con:endpoint><con:request/><con:originalUri>https://sample-4e6d.restdb.io/rest/users</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="q" value="{&quot;active&quot;: false}"/>
+  <con:entry key="h" value="{&quot;$max&quot;:4}"/>
+</con:parameters></con:request></con:method><con:method name="POST" id="7877b7ba-8cba-4d02-a4cb-2ef22d3c71aa" method="POST"><con:description>
+Create a new users document</con:description><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>201</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>500 400</con:status><con:params/><con:element xmlns:user="https://sample-4e6d.restdb.io/rest/users">user:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>201 200</con:status><con:params/><con:element xmlns:user="https://sample-4e6d.restdb.io/rest/users">user:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" id="8d55046a-8f91-4269-be10-a77342f1e887" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="9677194df0cd556c1bb2f9aeee86c7e218482" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://sample-4e6d.restdb.io</con:endpoint><con:request>{
+  "email": "vjbv1n@gmail.com",
+  "active": true
+}</con:request><con:originalUri>https://sample-4e6d.restdb.io/rest/users</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="/users/*" path="" id="a0ece61e-44f4-4df0-92f7-a270f2d7b10b"><con:settings/><con:parameters/><con:method name="DELETE" id="03e9f76d-c1e5-4cf5-9e1a-62cb0bfca7cc" method="DELETE"><con:description>
+Delete many users documents by query</con:description><con:settings/><con:parameters><con:parameter required="true"><con:name>q</con:name><con:style>QUERY</con:style><con:description/></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:ns="https://sample-4e6d.restdb.io/*">ns:Fault</con:element></con:representation><con:request name="Request 1" id="fa597640-7ae1-4051-b3e4-faa0c3f55760" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="9677194df0cd556c1bb2f9aeee86c7e218482" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://sample-4e6d.restdb.io</con:endpoint><con:request/><con:originalUri>https://sample-4e6d.restdb.io/*</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="q" value="5eb932f600aa167900000c1d" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method></con:resource><con:resource name="/users/{objectid}" path="/rest/users/{objectid}" id="ff2b38d0-ac14-4465-9ce9-ec4a47d64805"><con:settings/><con:parameters><con:parameter><con:name>objectid</con:name><con:style>TEMPLATE</con:style></con:parameter></con:parameters><con:method name="GET" id="34b9d9b4-17a5-44bb-b3f9-6de8e7595f27" method="GET"><con:description>
+Get one users document by _id</con:description><con:settings/><con:parameters><con:parameter required="true"><con:name>objectid</con:name><con:style>TEMPLATE</con:style><con:description>Unique ObjectID</con:description></con:parameter><con:parameter><con:name>h</con:name><con:style>QUERY</con:style><con:description>Optional database query hint</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:eb9="https://sample-4e6d.restdb.io/rest/users/5eb91efe00aa1679000007d7">eb9:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:eb9="https://sample-4e6d.restdb.io/rest/users/5eb91efe00aa1679000007d7">eb9:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" id="a4ce1b72-eb3a-4dc3-94d2-78ce37907149" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="9677194df0cd556c1bb2f9aeee86c7e218482" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://sample-4e6d.restdb.io</con:endpoint><con:request/><con:originalUri>https://sample-4e6d.restdb.io/users/5eb932f600aa167900000c1d</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="objectid" value="5eb932f600aa167900000c1d" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method><con:method name="PUT" id="b3b86b41-4759-439b-be06-c51c732cd0da" method="PUT"><con:description>
+Update a users document by _id</con:description><con:settings/><con:parameters><con:parameter required="true"><con:name>objectid</con:name><con:style>TEMPLATE</con:style><con:description>Unique ObjectID</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:user="https://sample-4e6d.restdb.io/rest/users/">user:Response</con:element></con:representation><con:request name="Request 1" id="81e1e7ff-6eed-4154-b05a-c833d9605ce5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="9677194df0cd556c1bb2f9aeee86c7e218482" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://sample-4e6d.restdb.io</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="DELETE" id="f36960ca-0cb0-4275-ab88-8ae6a0e9d854" method="DELETE"><con:description>
+Delete a users document by _id</con:description><con:settings/><con:parameters><con:parameter required="true"><con:name>objectid</con:name><con:style>TEMPLATE</con:style><con:description>Unique ObjectID</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:ns="https://sample-4e6d.restdb.io/rest/users/*">ns:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:eb9="https://sample-4e6d.restdb.io/*/users/5eb932f600aa167900000c1d">eb9:Response</con:element></con:representation><con:request name="Request 1" id="6e806636-0fe0-4f5a-b8da-031431115497" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="9677194df0cd556c1bb2f9aeee86c7e218482" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://sample-4e6d.restdb.io</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="PATCH" id="92ea23f0-5688-4209-b3a0-7f59f38ff232" method="PATCH"><con:description>
+Update field on a users document</con:description><con:settings/><con:parameters><con:parameter required="true"><con:name>objectid</con:name><con:style>TEMPLATE</con:style><con:description>Unique ObjectID</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:eb9="https://sample-4e6d.restdb.io/rest/users/5eb91efe00aa1679000007d7">eb9:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:eb9="https://sample-4e6d.restdb.io/rest/users/5eb91efe00aa1679000007d7">eb9:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" id="89f4c3e7-977f-472a-a4bb-60099abad676" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="9677194df0cd556c1bb2f9aeee86c7e218482" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://sample-4e6d.restdb.io</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="ba65ccbb-71ab-4eb9-9aed-4e480790ef67" name="UsersFlow"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="27caf2a0-27b9-410d-92ff-4e9d7093b5d4" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getUsersTest" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="getAllUsers" id="4826c62d-60b3-481d-8799-f0b0f7143a7c"><con:settings/><con:config service="sample-4e6d REST API" resourcePath="/rest/users" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="getAllUsers" id="d636b272-cc09-4f96-9903-aa8c05d9ba7c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="9677194df0cd556c1bb2f9aeee86c7e218482" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://sample-4e6d.restdb.io</con:endpoint><con:request/><con:originalUri>https://sample-4e6d.restdb.io/rest/users</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="bdfd0b31-6689-495d-82b8-b2382065a446" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="qq" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>qq</con:entry><con:entry>h</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="getUsersByQuery" id="cee2dd13-0bdc-4d88-9ffe-ad30ca52e4b2"><con:settings/><con:config service="sample-4e6d REST API" resourcePath="/rest/users" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="getUsersByQuery" id="d636b272-cc09-4f96-9903-aa8c05d9ba7c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="9677194df0cd556c1bb2f9aeee86c7e218482" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://sample-4e6d.restdb.io</con:endpoint><con:request/><con:originalUri>https://sample-4e6d.restdb.io/rest/users</con:originalUri><con:assertion type="Simple Contains" id="894429ab-b841-4fca-945c-68b1dc4176f1" name="Contains"><con:configuration><token>qwe@gmail.com</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="q" value="{&quot;email&quot;: &quot;qwe@gmail.com&quot;}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="limitGetUserRecords" id="f800a157-5310-401e-b20d-e24a94448f41"><con:settings/><con:config service="sample-4e6d REST API" resourcePath="/rest/users" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="limitGetUserRecords" id="d636b272-cc09-4f96-9903-aa8c05d9ba7c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="9677194df0cd556c1bb2f9aeee86c7e218482" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://sample-4e6d.restdb.io</con:endpoint><con:request/><con:originalUri>https://sample-4e6d.restdb.io/rest/users</con:originalUri><con:assertion type="JsonPath Count" id="610b77a6-d504-4f3b-8bb6-a6b4b1a7f5f1" name="JsonPath Count"><con:configuration><path>$.[*]._id</path><content>2</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="q" value="{&quot;active&quot;: false}"/>
+  <con:entry key="h" value="{&quot;$max&quot;:2}"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:tearDownScript/><con:properties/></con:testCase><con:testCase id="f6d93b98-e8d3-4d40-bb66-5c93dbf3a966" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="createUserTest" searchProperties="true"><con:settings/><con:testStep type="groovy" name="generateRandomData" id="01a57438-53e7-4e01-ac27-41434d6a9159"><con:settings/><con:config><script>import org.apache.commons.lang.RandomStringUtils 
+charset = (('a'..'z') + ('A'..'Z') + ('0'..'9')).join()
+length = 9
+testRunner.testCase.testSuite.setPropertyValue( "email", RandomStringUtils.random(length, charset.toCharArray()) )
+testRunner.testCase.testSuite.setPropertyValue( "active", "true" )
+testRunner.testCase.testSuite.setPropertyValue( "updatedEmail", RandomStringUtils.random(length, charset.toCharArray()) )
+testRunner.testCase.testSuite.setPropertyValue( "updatedActive", "false" )
+testRunner.testCase.testSuite.setPropertyValue( "updatedEmail1", RandomStringUtils.random(length, charset.toCharArray()) )</script></con:config></con:testStep><con:testStep type="restrequest" name="createUser" id="19030f8d-fb6b-46ed-b0fb-262937532127"><con:settings/><con:config service="sample-4e6d REST API" resourcePath="/rest/users" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="createUser" id="8d55046a-8f91-4269-be10-a77342f1e887" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="9677194df0cd556c1bb2f9aeee86c7e218482" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://sample-4e6d.restdb.io</con:endpoint><con:request>{
+  "email": "${#TestSuite#email}@gmail.com",
+  "active": ${#TestSuite#active}
+}</con:request><con:originalUri>https://sample-4e6d.restdb.io/rest/users</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="a1eb7edd-7b28-4f7c-869f-2733482c8fd3" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="eb4c3247-e7a7-4bfc-89b8-5b5985f1d024" name="JsonPath Existence Match"><con:configuration><path>$._id</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="filter userId" id="ff2b5442-9f15-48a8-999a-a94e5345c19f"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>userId</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createUser</con:sourceStep><con:sourcePath>$._id</con:sourcePath><con:targetType>userId</con:targetType><con:targetStep>#TestSuite#</con:targetStep><con:type>JSONPATH</con:type><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:tearDownScript/><con:properties><con:property><con:name>email</con:name><con:value>9sample12052020@gmail.com</con:value></con:property><con:property><con:name>active</con:name><con:value>true</con:value></con:property></con:properties></con:testCase><con:testCase id="3996914f-8a18-44c5-8684-74f6c5d13cd1" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getUserByIdTest" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="getUserById" id="cf051423-34fc-423a-ab4b-2a1e8df0bae6"><con:settings/><con:config service="sample-4e6d REST API" resourcePath="/rest/users/{objectid}" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="getUserById" id="a4ce1b72-eb3a-4dc3-94d2-78ce37907149" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="9677194df0cd556c1bb2f9aeee86c7e218482" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://sample-4e6d.restdb.io</con:endpoint><con:request/><con:originalUri>https://sample-4e6d.restdb.io/rest/users/5eb91efe00aa1679000007d7</con:originalUri><con:assertion type="JsonPath Match" id="147e2e6f-13bb-4d26-8f0b-432d6aee6123" name="JsonPath Match"><con:configuration><path>$._id</path><content>${#TestSuite#userId}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="objectid" value="${#TestSuite#userId}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:tearDownScript/><con:properties/></con:testCase><con:testCase id="f458f5a6-00ad-453d-80eb-b0a6cf51f59f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="updateUserTest" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="updateUser_PUT" id="1f354c08-507e-4ffe-84bb-5096a2ff0c11"><con:settings/><con:config service="sample-4e6d REST API" resourcePath="/rest/users/{objectid}" methodName="PUT" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="updateUser_PUT" id="81e1e7ff-6eed-4154-b05a-c833d9605ce5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="9677194df0cd556c1bb2f9aeee86c7e218482" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://sample-4e6d.restdb.io</con:endpoint><con:request>{
+	"_id": "${#TestSuite#userId}",
+  "email": "${#TestSuite#updatedEmail}@gmail.com",
+  "active": ${#TestSuite#updatedActive}
+}</con:request><con:originalUri>https://sample-4e6d.restdb.io/rest/users/</con:originalUri><con:assertion type="Simple Contains" id="29e4d76b-41e4-4fd3-8a1d-4f17a57a77ff" name="Contains"><con:configuration><token>${#TestSuite#updatedEmail}@gmail.com</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="objectid" value="${#TestSuite#userId}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="ExcecuteGetUser" id="0fa3d567-2842-4e28-81e0-1d90c2560250"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+def testStepName = 'getUserById'
+
+def testStep = testRunner.testCase.testSuite.getTestCaseByName('getUserByIdTest').getTestStepByName(testStepName)
+//Run the testStep
+def response = testStep.run(testRunner , context)
+log.info response.responseContent
+
+def jsonSlurper = new JsonSlurper()
+def jsonResponse = jsonSlurper.parseText(response.responseContent)
+def expectedEmail = testRunner.testCase.testSuite.getPropertyValue('updatedEmail')+"@gmail.com"
+
+assert jsonResponse.email == expectedEmail
+</script></con:config></con:testStep><con:tearDownScript/><con:properties><con:property><con:name>updatedEmail</con:name><con:value>updated1237@gmail.com</con:value></con:property><con:property><con:name>active</con:name><con:value>false</con:value></con:property></con:properties></con:testCase><con:testCase id="a2aaa9e4-959f-44d7-af28-ad82a4e6dd13" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="updateSingleFieldTest" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="updateUser_PATCH" id="e10ecbb2-0298-4356-a103-dc4da79bc6a1"><con:settings/><con:config service="sample-4e6d REST API" resourcePath="/rest/users/{objectid}" methodName="PATCH" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="updateUser_PATCH" id="89f4c3e7-977f-472a-a4bb-60099abad676" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="9677194df0cd556c1bb2f9aeee86c7e218482" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://sample-4e6d.restdb.io</con:endpoint><con:request>{
+	"email": "${#TestSuite#updatedEmail1}@gmail.com"
+}
+</con:request><con:originalUri>https://sample-4e6d.restdb.io/rest/users/5eb91efe00aa1679000007d7</con:originalUri><con:assertion type="Simple Contains" id="430bff48-81c4-4294-9586-1ed53c2ab7e9" name="Contains"><con:configuration><token>${#TestSuite#updatedEmail1}@gmail.com</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="objectid" value="${#TestSuite#userId}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="ExecuteGetUser_PATCH" id="0090cad8-8e52-48ca-ab14-eca76dc55bce"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+def testStepName = 'getUserById'
+
+def testStep = testRunner.testCase.testSuite.getTestCaseByName('getUserByIdTest').getTestStepByName(testStepName)
+//Run the testStep
+def response = testStep.run(testRunner , context)
+log.info response.responseContent
+
+def jsonSlurper = new JsonSlurper()
+def jsonResponse = jsonSlurper.parseText(response.responseContent)
+def expectedEmail = testRunner.testCase.testSuite.getPropertyValue('updatedEmail1')+"@gmail.com"
+
+assert jsonResponse.email == expectedEmail
+</script></con:config></con:testStep><con:tearDownScript/><con:properties><con:property><con:name>updatedEmail1</con:name><con:value>updatedemail1237@gmail.com</con:value></con:property></con:properties></con:testCase><con:testCase id="887135ba-a653-42e0-a85e-01ad6c5983fe" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="deleteSingleUserTest" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="deleteSingleUser" id="07e9a93d-fe9b-4399-a49f-b43472c01493"><con:settings/><con:config service="sample-4e6d REST API" resourcePath="/rest/users/{objectid}" methodName="DELETE" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="deleteSingleUser" id="6e806636-0fe0-4f5a-b8da-031431115497" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="x-apikey" value="9677194df0cd556c1bb2f9aeee86c7e218482" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://sample-4e6d.restdb.io</con:endpoint><con:request/><con:originalUri>https://sample-4e6d.restdb.io/*/users/5eb932f600aa167900000c1d</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="d836d007-8f22-4954-bdc8-d66b4c8d26bd" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="objectid" value="${#TestSuite#userId}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:tearDownScript/><con:properties/></con:testCase><con:properties><con:property><con:name>userId</con:name><con:value>5ec222a000aa167900015792</con:value></con:property><con:property><con:name>email</con:name><con:value>FbbR6g6R0</con:value></con:property><con:property><con:name>active</con:name><con:value>true</con:value></con:property><con:property><con:name>updatedEmail</con:name><con:value>cXEGzY2ys</con:value></con:property><con:property><con:name>updatedActive</con:name><con:value>false</con:value></con:property><con:property><con:name>updatedEmail1</con:name><con:value>ygLaAqIWz</con:value></con:property></con:properties><con:setupScript/></con:testSuite><con:properties/><con:afterLoadScript><![CDATA[import com.relevantcodes.extentreports.ExtentReports.*; 
+import com.relevantcodes.extentreports.ExtentTest.*;
+import com.relevantcodes.extentreports.reporter.*;
+import java.text.SimpleDateFormat
+import java.io.File;
+import jxl.*;
+import java.util.*;
+
+
+log.info "-------------------------------Starting Extent Reports----------------------------------------"
+
+def date = new Date() 
+sdf = new SimpleDateFormat("dd_MM_yyyy_HHmmss") 
+def start_time = sdf.format(date) 
+//log.info(start_time) 
+
+String currentDir = context.expand('${projectDir}');
+def path = currentDir+"//Extentreports//Extentreports.html" 
+
+
+def LogStatus = com.relevantcodes.extentreports.LogStatus; 
+def failedTestCase = 0; 
+def extent = new ExtentReports(path,false) 
+extent.loadConfig(new File(currentDir+"\\Extentreports\\Extent-Config.xml"));
+extent.addSystemInfo("Report Name", "TestReport").addSystemInfo("Report Type", "MYQRCodes");
+
+
+def testcase = context.expand('${#TestCase#teststep}') as String
+def feature = context.expand('${#TestCase#featurename}') as String
+def parent = extent.startTest(testcase).assignCategory(feature);
+
+////  Loads the property file
+//Properties SheetName= new Properties();
+//File SheetNames=new File(currentDir+"\\Input\\data.properties")
+//SheetNames.withInputStream
+//{
+//                SheetName.load(it)
+//}
+//
+//                 
+////Listing the test steps to be executed according to the feeature
+//List<String> step2 = [SheetName.Step1,SheetName.Step2]
+//List<String> step3 = [SheetName.Step1,SheetName.Step2,SheetName.Step3]
+//List<String> step4 = [SheetName.Step1,SheetName.Step2,SheetName.Step3,SheetName.Step4]
+//List<String> step5 = [SheetName.Step1,SheetName.Step2,SheetName.Step3,SheetName.Step4,SheetName.Step5]
+//List<String> step7 = [SheetName.Step1,SheetName.Step2,SheetName.Step3,SheetName.Step7]
+//
+//// Enter the stepname and assign it to a list object
+//def sheetRun=null;
+//List<String> step =null;
+//if(feature==SheetName.Step2)
+//{
+//step = step2
+//sheetRun = SheetName.Step2
+//}
+//else if(feature==SheetName.Step3)
+//{
+//step = step3
+//sheetRun = SheetName.Step3 
+//}
+//else if(feature==SheetName.Step4)
+//{
+//step = step4
+//sheetRun = SheetName.Step4 
+//}
+//else if(feature==SheetName.Step5)
+//{
+//step = step5
+//sheetRun = SheetName.Step5 
+//}
+//else if(feature==SheetName.Step7)
+//{
+//step = step7
+//sheetRun = SheetName.Step7 
+//}
+
+// Enter which API needs to be executed
+
+ArrayList<String> step = new ArrayList<>(Arrays.asList("allcountrylist", "SpecificCountry"));
+log.info (step.size())
+
+for(def j=0;j<step.size();j++)
+{
+
+def child = extent.startTest(step[j])
+def extentTest = parent.appendChild(child)
+def httpResponseHeaders = context.testCase.testSteps[step[j]].testRequest.response.responseHeaders
+
+def requestHeaders = context.testCase.testSteps[step[j]].testRequest.response.requestHeaders
+
+def responseBody = testRunner.testCase.getTestStepByName(step[j]).getPropertyValue("response")
+def requestBody = testRunner.testCase.getTestStepByName(step[j]).getPropertyValue("request")
+
+// Add assertion list status in each test step in the report
+def m=0;
+
+def assertionsList=null;
+// Get the assertion list from a specific test step
+assertionsList = testRunner.getTestCase().getTestStepByName(step[j]).getAssertionList()
+
+List<String> assertName=[]
+List<String> assertStatus=[]
+
+for(def i=0;i<assertionsList.size();i++)
+{
+                // Get the nmae of the assertion
+                TName = assertionsList[i].getName()
+                // Add it to the list           
+                assertName.add(TName)
+                // Get the assertion result 
+                Status =  assertionsList[i].getStatus()
+                // Add it to the list
+                assertStatus.add(Status)
+                
+                                
+
+                
+}
+
+
+
+
+if(httpResponseHeaders!=null)
+{
+def stataus = httpResponseHeaders.get("#status#") as String
+
+log.info stataus 
+def ContentTypedata = httpResponseHeaders.get("Content-Type") as String
+def citiuuid = httpResponseHeaders.get("Citiuuid") as String
+
+
+
+if(stataus == "[HTTP/1.1 200 ]")
+{ 
+//Print pass message in the report logs
+child.log(LogStatus.PASS, step[j]+ "-------- Checking status ---------- " + stataus )
+child.log(LogStatus.INFO, step[j] + "-------- Request log  -------------   " +requestBody)
+child.log(LogStatus.INFO, step[j] + "-------- Response log -------------   " +responseBody)
+child.log(LogStatus.INFO, step[j] + "-------- Raw Request Headers ------   " +requestHeaders)
+child.log(LogStatus.INFO, step[j] + "-------- Raw Response Headers -----   " +httpResponseHeaders)
+while (m<assertionsList.size())
+// Print assertion results in the report logs
+while (m<assertionsList.size())
+{
+                child.log(LogStatus.INFO, step[j] + "------- Assertion Status --------- "+ assertName[m]+" - "+assertStatus[m]+"\r\n" )
+                m++;
+}
+
+} 
+else
+{ 
+//Print fail  message in the report logs     
+child.log(LogStatus.FAIL, step[j] + "-------- Checking status ----------   " + stataus + "   citiuuid : "  + citiuuid)
+// Display the request and response details of that test step
+child.log(LogStatus.INFO, step[j] + "-------- Request log  -------------   " +requestBody)
+child.log(LogStatus.INFO, step[j] + "-------- Response log -------------   " +responseBody)
+child.log(LogStatus.INFO, step[j] + "-------- Raw Request Headers ------   " +requestHeaders)
+child.log(LogStatus.INFO, step[j] + "-------- Raw Response Headers -----   " +httpResponseHeaders)
+while (m<assertionsList.size())
+{
+                child.log(LogStatus.INFO, step[j] + "------- Assertion Status --------- "+ assertName[m]+" - "+assertStatus[m]+"\r\n" )
+                m++;
+
+} 
+}
+extent.endTest(child);
+extent.endTest(parent);
+}
+else if(httpResponseHeaders==null)
+{
+                log.info "No Data Present"
+}
+
+                
+}
+
+
+
+extent.flush();
+
+log.info "-------------------------------Ending Extent Reports----------------------------------------"
+                                                                                                                
+                                                                             
+]]></con:afterLoadScript><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
